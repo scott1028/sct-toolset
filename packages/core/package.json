@@ -14,9 +14,11 @@
     "lib"
   ],
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "build": "esbuild lib/core.js --bundle --sourcemap --platform=node --outfile=dist/index.js"
   },
   "dependencies": {
+    "esbuild": "^0.12.5",
     "lodash": "^4.17.21"
   }
 }
